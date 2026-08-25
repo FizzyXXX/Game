@@ -1,0 +1,88 @@
+# Unity .gitignore for repositories containing one or more Unity projects.
+# Place this file at the root of the Git repository.
+# Patterns below intentionally match generated folders at any nesting level.
+
+# Unity generated folders
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Bb]uild/
+**/[Bb]uilds/
+**/[Ll]ogs/
+**/[Uu]ser[Ss]ettings/
+**/[Mm]emoryCaptures/
+**/[Rr]ecordings/
+
+# Asset Store Tools can generate this folder
+**/Assets/AssetStoreTools*
+
+# Crash / diagnostic output
+**/sysinfo.txt
+**/*.stackdump
+
+# IDEs and editors
+**/.vs/
+**/.vscode/
+**/.idea/
+**/.fleet/
+
+# Visual Studio / Rider / MonoDevelop generated project files
+**/*.csproj
+**/*.sln
+**/*.suo
+**/*.user
+**/*.userprefs
+**/*.pidb
+**/*.booproj
+**/*.svd
+**/*.pdb
+**/*.mdb
+**/*.opendb
+**/*.VC.db
+**/*.VC.VC.opendb
+**/*.pidb.meta
+**/*.pdb.meta
+**/*.mdb.meta
+
+# Unity-generated solution/project support files
+**/*.unityproj
+**/*.tmp
+**/*.tmp.meta
+
+# OS files
+**/.DS_Store
+**/.AppleDouble
+**/.LSOverride
+**/Thumbs.db
+**/Thumbs.db:encryptable
+**/Desktop.ini
+
+# Windows shortcuts
+**/*.lnk
+
+# Package manager / tooling caches
+**/.gradle/
+**/.nuget/
+**/node_modules/
+
+# Android / build artifacts that may appear inside projects
+**/*.apk
+**/*.aab
+**/*.apks
+**/*.ipa
+
+# Unity editor lock / transient files
+**/TempUnityLockfile
+
+# Optional: local environment files
+**/.env
+**/.env.local
+
+# Keep Unity source project content in Git:
+# Assets/
+# Packages/
+# ProjectSettings/
+# *.meta
+#
+# Do NOT globally ignore .meta files. Unity relies on them to preserve GUIDs
+# and references between assets.
