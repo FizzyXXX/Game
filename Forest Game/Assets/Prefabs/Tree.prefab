@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6451429605232026285}
   - component: {fileID: 3321257930275046373}
   - component: {fileID: 4343504191457147235}
-  - component: {fileID: 713956931363825592}
+  - component: {fileID: 1722155986309658322}
   m_Layer: 0
   m_Name: Leaf Layer
   m_TagString: Untagged
@@ -91,8 +91,8 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &713956931363825592
-CapsuleCollider:
+--- !u!64 &1722155986309658322
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109,11 +109,10 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1415026382772471647
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +159,7 @@ GameObject:
   - component: {fileID: 222783982081006062}
   - component: {fileID: 8761205242778373929}
   - component: {fileID: 7264607223472782874}
-  - component: {fileID: 8243530339484016456}
+  - component: {fileID: 93509629598311753}
   m_Layer: 0
   m_Name: Tree Body
   m_TagString: Untagged
@@ -240,8 +239,8 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8243530339484016456
-CapsuleCollider:
+--- !u!64 &93509629598311753
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -258,11 +257,10 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &6614856794133719310
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,7 +272,7 @@ GameObject:
   - component: {fileID: 4947561449962018918}
   - component: {fileID: 6276990277457181074}
   - component: {fileID: 894741983247945428}
-  - component: {fileID: 7565461850646296860}
+  - component: {fileID: 2581820454994014808}
   m_Layer: 0
   m_Name: Leaf Layer (1)
   m_TagString: Untagged
@@ -354,8 +352,8 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7565461850646296860
-CapsuleCollider:
+--- !u!64 &2581820454994014808
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -372,11 +370,10 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &7179502246939081743
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,7 +385,7 @@ GameObject:
   - component: {fileID: 4849736613122779885}
   - component: {fileID: 6416794937465260949}
   - component: {fileID: 5947414943523375647}
-  - component: {fileID: 5905410986647661897}
+  - component: {fileID: 8115382065626870298}
   m_Layer: 0
   m_Name: Leaf Layer (2)
   m_TagString: Untagged
@@ -468,8 +465,8 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &5905410986647661897
-CapsuleCollider:
+--- !u!64 &8115382065626870298
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -486,8 +483,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
