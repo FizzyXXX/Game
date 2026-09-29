@@ -38,7 +38,7 @@ public class PipeBomb : MonoBehaviour
         randomDirection.Normalize();
 
         rb.AddForce(randomDirection * explosionForce, ForceMode.Impulse);
-
+        //
         Vector3 randomTorque = Random.insideUnitSphere;
         rb.AddTorque(randomTorque * rotationForce, ForceMode.Impulse);
     }
