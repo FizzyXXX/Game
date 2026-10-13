@@ -2,7 +2,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class Camera : MonoBehaviour
 {
-    [SerializeField] float speed = 10;
+    [SerializeField] 
+    float speed = 50000;
     Rigidbody rb;
     void Awake()
     {
@@ -33,7 +34,7 @@ public class Camera : MonoBehaviour
         if (Keyboard.current.upArrowKey.isPressed)
         {
             transform.Translate(new Vector3(0, 1*speed*Time.deltaTime, 0));
-            rb.AddForce(Vector3.up*3, ForceMode.Impulse);
+            rb.AddForce(Vector3.up, ForceMode.Impulse);
         }
         
         if (Keyboard.current.downArrowKey.isPressed)

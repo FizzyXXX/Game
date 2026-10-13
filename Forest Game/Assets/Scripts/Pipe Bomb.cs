@@ -23,7 +23,7 @@ public class PipeBomb : MonoBehaviour
     {   
         forceDirection = new Vector3(UnityEngine.Random.Range(0, 100), UnityEngine.Random.Range(0, 100), UnityEngine.Random.Range(0, 100));
         Debug.Log(forceDirection);
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Keyboard.current.gKey.wasPressedThisFrame)
         {
             //rb.AddForce(forceDirection, ForceMode.Impulse);
             Explode();
