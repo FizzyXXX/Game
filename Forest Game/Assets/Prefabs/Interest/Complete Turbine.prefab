@@ -763,7 +763,8 @@ PrefabInstance:
       value: Turbine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3386688491881538089, guid: f0e12e675aff2894281aac4fed259576, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0e12e675aff2894281aac4fed259576, type: 3}

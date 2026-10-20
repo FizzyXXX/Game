@@ -121,7 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4317604422525868965}
-  - component: {fileID: 8718130374913467083}
+  - component: {fileID: 2077967612707176098}
   m_Layer: 0
   m_Name: Wheel
   m_TagString: Untagged
@@ -149,7 +149,7 @@ Transform:
   - {fileID: 7782357533490338885}
   m_Father: {fileID: 7295583795814962579}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8718130374913467083
+--- !u!114 &2077967612707176098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
