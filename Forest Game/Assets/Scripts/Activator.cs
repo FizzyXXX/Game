@@ -20,7 +20,7 @@ public class Activator : MonoBehaviour
             objectToActivate.SetActive(true);
         }
     }
-    void OerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
