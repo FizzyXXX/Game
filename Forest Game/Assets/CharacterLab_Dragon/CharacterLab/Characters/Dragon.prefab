@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8213338859730062147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2464535189554014054}
+  - component: {fileID: 5847711076801192457}
+  - component: {fileID: 6131678215653486347}
+  m_Layer: 0
+  m_Name: "Dragon"
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2464535189554014054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213338859730062147}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &5847711076801192457
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213338859730062147}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1.5
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.35
+  m_SkinWidth: 0.04
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 0.75, z: 0}
+--- !u!114 &6131678215653486347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213338859730062147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f248e098c0da77741984ad39945ec8fd, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterLab.CharacterLabPlayer
+  config:
+    characterName: "Dragon"
+    model:
+      model: "Dragon"
+      height: 1.5
+      radius: 0.5
+      modelScale: 1.55
+      modelYaw: 0
+      modelOffsetY: 0
+      tint: {r: 0.3569, g: 0.302, b: 1, a: 1}
+      tintStrength: 0.35
+      parts: []
+    anim:
+      useClips: 1
+      animSpeed: 1
+      squashStretch: 0.35
+      lean: 0.4
+      bob: 0.5
+      flipOnAirJump: 1
+      dashPose: 0
+      slidePose: 0
+    move:
+      walkSpeed: 6
+      sprintMode: 0
+      sprintSpeed: 10
+      acceleration: 60
+      deceleration: 70
+      airControl: 0.6
+      turnSpeed: 900
+      controlStyle: 0
+      faceMode: 0
+      enableCrouch: 1
+      crouchSpeed: 3
+      crouchHeight: 0.55
+      slopeLimit: 45
+      stepOffset: 0.35
+      pushPower: 4
+    jump:
+      jumpHeight: 2.2
+      gravity: 28
+      fallMultiplier: 1.6
+      maxFallSpeed: 45
+      variableJump: 1
+      airJumps: 1
+      airJumpHeight: 1.8
+      coyoteTime: 0.12
+      jumpBuffer: 0.12
+      landingBounce: 0
+      airHold: 0
+      glideFallSpeed: 2
+      glideSpeed: 9
+      jetpackForce: 40
+      jetpackFuel: 1.6
+      fuelRecharge: 1.5
+    dash:
+      enabled: 1
+      speed: 24
+      duration: 0.18
+      cooldown: 0.45
+      airDashes: 1
+      direction: 0
+      noGravity: 1
+      keepSpeed: 0.35
+    slide:
+      enabled: 1
+      boost: 4
+      friction: 5
+      minSpeed: 5
+      maxTime: 1.2
+      slopeBoost: 18
+      longJump: 4
+    wall:
+      wallJump: 1
+      slideSpeed: 3
+      jumpHeight: 2
+      jumpPush: 9
+      resetAirJumps: 1
+      wallRun: 0
+      runSpeed: 11
+      runTime: 1.4
+      runGravity: 3
+    extra:
+      groundPound: 1
+      poundSpeed: 40
+      poundBounce: 0
+      grapple: 0
+      grappleRange: 35
+      grappleSpeed: 28
+      grappleTargets: 0
+      action: 1
+      respawnHeight: -40
+    cam:
+      view: 0
+      lookControl: 0
+      sensitivityX: 2
+      sensitivityY: 1.6
+      invertY: 0
+      keyTurnSpeed: 140
+      distance: 6
+      pivotHeight: 0.85
+      shoulder: 0.7
+      pitchMin: -40
+      pitchMax: 75
+      startPitch: 18
+      fov: 65
+      sprintFov: 8
+      followSmooth: 0.12
+      scrollZoom: 1
+      zoomMin: 2
+      zoomMax: 14
+      collision: 1
+      autoRecenter: 0
+      headBob: 0.3
+      tilt: 8
+      shake: 0.5
+      showBody: 0
+    keys:
+      jump: "<Keyboard>/space"
+      sprint: "<Keyboard>/leftShift"
+      crouch: "<Keyboard>/leftCtrl"
+      dash: "<Keyboard>/e"
+      grapple: "<Keyboard>/f"
+      action: "<Mouse>/leftButton"
+      moveKeys: 0
+      gamepad: 1
+    fx:
+      color: {r: 0.3686, g: 0.9059, b: 1, a: 1}
+      color2: {r: 1, g: 0.3686, b: 0.8588, a: 1}
+      trail: 3
+      trailWidth: 0.3
+      trailTime: 0.25
+      dust: 1
+      dustColor: {r: 0.851, g: 0.7961, b: 0.7216, a: 1}
+      airJumpFx: 1
+      afterimages: 1
+      speedLines: 1
+      landShockwave: 1
+      wallSparks: 1
+      aura: 0
+      auraColor: {r: 1, g: 0.8471, b: 0.302, a: 1}
+    audio:
+      enabled: 1
+      pack: 0
+      volume: 0.7
+      pitch: 1
+      footsteps: 1
+  modelOverride: {fileID: 0}
+  playerCamera: {fileID: 0}
+  extraClips: []
+  controlCamera: 1
