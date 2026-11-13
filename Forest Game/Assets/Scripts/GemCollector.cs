@@ -13,7 +13,7 @@ public class GemCollector : MonoBehaviour
     {
         
     }
-    void OggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Gem"))
         {
